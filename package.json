@@ -1,0 +1,32 @@
+{
+  "name": "nest-composable-guards",
+  "version": "0.1.0",
+  "description": "Compose NestJs guards together with Boolean operators.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dallin343/nest-composable-guards.git"
+  },
+  "keywords": [
+    "nestjs"
+  ],
+  "author": "Dallin Hagman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dallin343/nest-composable-guards/issues"
+  },
+  "homepage": "https://github.com/Dallin343/nest-composable-guards#readme",
+  "devDependencies": {
+    "@nestjs/common": "^10.2.7",
+    "@nestjs/core": "^10.2.7",
+    "@types/node": "^20.8.10",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
