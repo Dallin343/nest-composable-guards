@@ -1,10 +1,12 @@
 {
   "name": "nest-composable-guards",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Compose NestJs guards together with Boolean operators.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && node dist/index.js",
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "eslint --ext .js,.ts"
   },
   "repository": {
     "type": "git",
@@ -22,11 +24,20 @@
   "devDependencies": {
     "@nestjs/common": "^10.2.7",
     "@nestjs/core": "^10.2.7",
+    "@nestjs/testing": "^10.2.8",
     "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "tsup": "^7.2.0",
+    "typescript": "^5.3.3"
   }
 }

@@ -1,13 +1,19 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "experimentalDecorators": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist"
-    },
-    "lib": ["es2015"]
-  }
+        "lib": ["es2022"],
+        "module": "node16",
+        "target": "es2022",
+        "baseUrl": "./",
+    
+        "strict": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node16",
+        "noEmit": true
+      },
+    "include": ["src/**/*.ts", "./index.ts"],
+    "exclude": ["**/*.spec.ts"]
+}
   
